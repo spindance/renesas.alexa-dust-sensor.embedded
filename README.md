@@ -1,4 +1,4 @@
-# renesas.alexa-poc.embedded
+# renesas.alexa-dust-sensor.embedded
 
 ## Overview
 This is an air quality detection application that runs on the [Renesas Synergy™ S3A7 Fast Prototyping Kit](https://www.renesas.com/en-us/products/software-tools/boards-and-kits/renesas-synergy-kits/renesas-synergy-s3a7-prototyping-kit.html) built in the Renesas e2Studio ISDE utilizing the [Synergy™ Software Package (SSP)](https://www.renesas.com/en-us/products/synergy/software.html). The application calculates dust particle concentration using the Seed Studio [PPD42NS Grove Dust Sensor](http://www.mouser.com/ds/2/744/Seeed_101020012-838657.pdf), and reports low pulse occupancy (LPO) data to [Renesas IoT Sandbox](https://www.renesas.com/en-us/solutions/proposal/iot-sandbox.html).
