@@ -7,7 +7,7 @@ Upon resetting, the application flashes the S3A7 Fast Prototyping Kit’s blue L
 
 Currently, the green and blue LEDs flash on and off every second. Dust concentration is calculated by default over a 15 second window and reported to the cloud at the end of each window. The dust calculation window is able to be modified remotely via Renesas IoT Sandbox. The Grove Dust Sensor outputs low when dust particles are detected, and once the warmup period is over, the blue LED is turned on during low pulses from the sensor.
 
-The board can be provisioned with Wi-Fi and Renesas IoT Sandbox connections by tapping the LCD immediately after the board is powered up, connecting to the board as a Wi-Fi access point, then entering the network SSID and password of the network the board should connect to, and also entering the project and user MQTT IDs and API key and password that were provided to you when registering with Renesas IoT Sandbox [TBD: Provide link to online tutorial].
+The board can be provisioned with Wi-Fi and Renesas IoT Sandbox connections by tapping the LCD immediately after the board is powered up, connecting to the board as a Wi-Fi access point, then entering the network SSID and password of the network the board should connect to, and also entering the project and user MQTT IDs and API key and password that were provided to you when registering with Renesas IoT Sandbox.
 
 The Grove Dust Sensor must be attached to Grove A (UART3); Grove B (UART2) does not have the necessary interrupt pin and therefore is not compatible with this implementation.
 
@@ -47,13 +47,13 @@ Note that the following steps may require creating Renesas and SSP accounts.
 
 3. Install [WiFi Addon](https://synergygallery.renesas.com/ssp/utility#read) —> SSP Utilities —> “Wi-Fi Framework (with GT202 Drivers)” (Click down pointing arrow)
 
-4. Copy [Renesas.S3_IOT_BOARD.1.2.0.pack TBD Get link] to: `\Renesas\e2_studio\internal\projectgen\arm\Packs`
+4. Copy `Renesas.S3_IOT_BOARD.1.2.0.pack` to: `\Renesas\e2_studio\internal\projectgen\arm\Packs`
 
 5. Clone or download this repo to, for example, `c:\Users\<username>\e2studio\`. The root directory is an e2studio workspace.
 
 6. Open e2Studio. Open the workspace in e2Studio, for example, via `File -> Switch Workspace -> <navigate to the workspace directory>`
 
-7. Install [e2Studio License TBD: Get link or whatever to license] - Navigate to license file when prompted: `\Renesas\e2_studio\internal\projectgen\arm\Licenses`
+7. Install e2Studio License - Navigate to license file when prompted: `\Renesas\e2_studio\internal\projectgen\arm\Licenses`
 Select `SSP_License_Example_EvalLicense_20160629`.
 
 8. Double click the project’s `configuration.xml`, and click `Generate Project Content`. e2studio may need to be restarted once this is complete.
