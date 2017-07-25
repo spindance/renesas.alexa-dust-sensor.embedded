@@ -47,7 +47,7 @@ Note that the following steps may require creating Renesas and SSP accounts.
 
 3. Install [WiFi Addon](https://synergygallery.renesas.com/ssp/utility#read) —> SSP Utilities —> “Wi-Fi Framework (with GT202 Drivers)” (Click down pointing arrow)
 
-4. Copy `Renesas.S3_IOT_BOARD.1.2.0.pack` to: `\Renesas\e2_studio\internal\projectgen\arm\Packs`
+4. Copy the file `./instalation/Renesas.S3_IOT_BOARD.1.2.0.pack` to the e2Studio installation directory: `\Renesas\e2_studio\internal\projectgen\arm\Packs`
 
 5. Clone or download this repo to, for example, `c:\Users\<username>\e2studio\`. The root directory is an e2studio workspace.
 
