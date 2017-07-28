@@ -49,13 +49,15 @@ Note that the following steps may require creating Renesas and SSP accounts.
 
 4. Copy the file `./installation/Renesas.S3_IOT_BOARD.1.2.0.pack` (in this repository) to your local e2Studio installation directory: `\Renesas\e2_studio\internal\projectgen\arm\Packs`
 
-5. Clone or download this repo to, for example, `c:\Users\<username>\e2studio\`. The root directory is an e2studio workspace.
+5. For source code access, clone or download this repo to, for example, `c:\Users\<username>\e2studio\`. The root directory is an e2studio workspace.
 
-6. Open e2Studio. Open the workspace in e2Studio, for example, via `File -> Switch Workspace -> <navigate to the workspace directory>`
+6. Open e2Studio. While one can use the source code closed from Github, the easiest solution is to download the workspace archive found [here](https://github.com/spindance/renesas.alexa-dust-sensor.embedded/releases/tag/1.0.0). To do that select File->Import. Then when the Import dialog box appears, select "General" and then "Existing Projects into Workspace". Click Next. Then click the select archive file radio button and "Browse" for the worksapce archive. You should see the GroveDustSensor in the Projects section. Click Finish. The project will be added to the workspace. A workspace will be created if there is not one already created.
 
-7. Install e2Studio License - Navigate to license file when prompted: `\Renesas\e2_studio\internal\projectgen\arm\Licenses`
+7. Additionally, the already compiled firmware can be downloaded in [SREC](https://github.com/spindance/renesas.alexa-dust-sensor.embedded/releases/tag/1.0.0) format. Instructions for loading a binary directly on the hardware can be read in this [Renesas blog post](http://renesas-blog.mediumone.com/how-to-flash-the-s3a7-board/)
+
+8. Install e2Studio License - Navigate to license file when prompted: `\Renesas\e2_studio\internal\projectgen\arm\Licenses`
 Select `SSP_License_Example_EvalLicense_20160629`.
 
-8. Double click the project’s `configuration.xml`, and click `Generate Project Content`. e2studio may need to be restarted once this is complete.
+9. Double click the project’s `configuration.xml`, and click `Generate Project Content`. e2studio may need to be restarted once this is complete.
 
-9. Attempt to build by selecting project `GroveDustSensor` in the project explorer, then clicking `Project -> Build Project`, by right clicking the project in the project explorer and selecting `Build Project`.
+10. Attempt to build by selecting project `GroveDustSensor` in the project explorer, then clicking `Project -> Build Project`, by right clicking the project in the project explorer and selecting `Build Project`.
